@@ -56,3 +56,4 @@ This is a **restaurant pizza order form** created using **only HTML** as part of
 * Form controls are accessible and semantic with proper labels and input types.
 * All required fields are marked with the `required` attribute for basic validation.
 * The form structure uses semantic HTML5 elements (`<fieldset>`, `<legend>`, `<section>`) for better organization.
+

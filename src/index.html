@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Order Form</title>
+    <meta name="author" content="Mariam Kilany" />
+    <meta
+      name="description"
+      content="Order your custom pizza from Black Goose Bistro. Choose crust and toppings with your own delivery instructions."
+    />
+    <meta
+      name="keywords"
+      content="pizza, crust , order form, restaurant, custom pizza, Black Goose Bistro"
+    />
+  </head>
+  <body>
+    <!-- & Site header with navigation links -->
+    <header>
+      <nav>
+        <div class="navLinks">
+          <ul>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Make an order</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- & Order form -->
+    <main>
+      <form>
+        <div class="formHeading">
+          <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+          <p>
+            Our 12" wood-fired pizza are available for delivery, build your
+            custom pizza and we'll deliver it within an hour.
+          </p>
+        </div>
+
+        <!-- & Section for user personal information -->
+        <section>
+          <div class="userInfo">
+            <fieldset>
+              <legend>Your Information</legend>
+
+              <div class="personalInfo">
+                <table>
+                  <tr>
+                    <td><label for="name">Name :</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autocomplete="off"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="address">Address :</label></td>
+                    <td>
+                      <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        autocomplete="off"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="phone">Telephone Number :</label></td>
+                    <td>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        autocomplete="off"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td>
+                      <input type="email" name="email" id="email" required />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="deliverDetails">
+                <label for="delivery">Delivery Instruction :</label><br />
+                <textarea
+                  name="delivery"
+                  id="delivery"
+                  rows="4"
+                  placeholder="No more than 400 characters long"
+                  cols="40"
+                ></textarea
+                ><br /><br />
+              </div>
+            </fieldset>
+          </div>
+        </section>
+
+        <!-- & Section for pizza customization -->
+        <section>
+          <h2>Design Your Dream Pizza:</h2>
+          <div class="pizzaDetails">
+            <fieldset>
+              <legend>Pizza specs</legend>
+
+              <!--  Crust choices using radio buttons -->
+              <div class="crustChoices">
+                <fieldset>
+                  <legend>Crust (Choose one):</legend>
+                  <br />
+
+                  <input
+                    type="radio"
+                    id="classicWhite"
+                    name="crustChoice"
+                    value="classic_white"
+                  />
+                  <label for="classicWhite">Classic White</label><br />
+
+                  <input
+                    type="radio"
+                    id="multigrain"
+                    name="crustChoice"
+                    value="multigrain"
+                  />
+                  <label for="multigrain">Multigrain</label><br />
+
+                  <input
+                    type="radio"
+                    id="stuffed"
+                    name="crustChoice"
+                    value="stuffed"
+                  />
+                  <label for="stuffed">Choose-stuffed crust</label><br />
+
+                  <input
+                    type="radio"
+                    id="glutenFree"
+                    name="crustChoice"
+                    value="gluten_free"
+                  />
+                  <label for="glutenFree">Gluten-free</label><br /><br />
+                </fieldset>
+              </div>
+
+              <!-- Toppings using checkboxe -->
+              <div class="Toppings">
+                <fieldset>
+                  <legend>Toppings (Choose as many as you want):</legend>
+                  <br />
+
+                  <input
+                    type="checkbox"
+                    id="redSauce"
+                    name="Topping"
+                    value="red_sauce"
+                  />
+                  <label for="redSauce">Red Sauce</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="whiteSauce"
+                    name="Topping"
+                    value="white_sauce"
+                  />
+                  <label for="whiteSauce">White Sauce</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="mozzarella"
+                    name="Topping"
+                    value="mozzarella"
+                  />
+                  <label for="mozzarella">Mozzarella Cheese</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="pepperoni"
+                    name="Topping"
+                    value="pepperoni"
+                  />
+                  <label for="pepperoni">Pepperoni</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="mushrooms"
+                    name="Topping"
+                    value="mushrooms"
+                  />
+                  <label for="mushrooms">Mushrooms</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="peppers"
+                    name="Topping"
+                    value="peppers"
+                  />
+                  <label for="peppers">Peppers</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="anchovies"
+                    name="Topping"
+                    value="anchovies"
+                  />
+                  <label for="anchovies">Anchovies</label><br /><br />
+                </fieldset>
+              </div>
+
+              <!-- Pizza quantity -->
+              <div class="numberOfPizza">
+                <fieldset>
+                  <legend>Number</legend>
+
+                  <div class="numberInput">
+                    <br />
+                    <label for="pizzaCount">How many Pizza:</label>
+                    <input
+                      type="number"
+                      name="pizzaCount"
+                      id="pizzaCount"
+                      min="1"
+                    />
+                    <br /><br />
+                  </div>
+                </fieldset>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+
+        <!-- & Submit and reset buttons -->
+        <div class="formActions">
+          <br />
+          <input type="submit" value="Bring me a pizza!" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
